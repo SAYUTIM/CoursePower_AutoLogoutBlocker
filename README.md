@@ -1,0 +1,2 @@
+# CoursePower_AutoLogoutBlocker
+自動でコースパワーからログアウトされるのを無効化します。
