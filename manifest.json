@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "auto logout blocker",
+  "description": "自動でコースパワーからログアウトされるのを無効化します。テスト中や課題の提出時に使用しないでください。",
+  "version": "1.0.0",
+  "permissions": ["activeTab","storage"],
+  "web_accessible_resources": [
+      {
+          "resources": ["autologoutblocker.js"],
+          "matches": ["https://study.ns.kogakuin.ac.jp/*"]
+      }
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://study.ns.kogakuin.ac.jp/*"],
+          "run_at": "document_start",
+          "js": ["inject.js"]
+      },
+      {
+        "matches": ["https://study.ns.kogakuin.ac.jp/*"],
+        "js": ["visibleuse.js"]
+      }
+  ]
+}
