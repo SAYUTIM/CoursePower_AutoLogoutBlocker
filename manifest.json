@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "auto logout blocker",
   "description": "自動でコースパワーからログアウトされるのを無効化します。テスト中や課題の提出時に使用しないでください。",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "permissions": ["activeTab","storage"],
   "web_accessible_resources": [
       {
