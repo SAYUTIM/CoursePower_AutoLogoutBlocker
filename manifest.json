@@ -12,7 +12,7 @@
   ],
   "content_scripts": [
       {
-          "matches": ["https://study.ns.kogakuin.ac.jp/*"],
+          "matches": ["https://study.ns.kogakuin.ac.jp/*","https://auth.kogakuin.ac.jp/*"],
           "run_at": "document_start",
           "js": ["inject.js"]
       },
