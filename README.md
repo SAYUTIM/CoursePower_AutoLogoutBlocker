@@ -6,15 +6,15 @@
 ## 注意事項
 - 本拡張機能による不具合や悪影響については未確認です。テスト中や課題の提出時に使用しないようにしてください。
 
-## 使い方
+## 通常の使い方
 
-1. [拡張機能のダウンロードリンク](https://github.com/SAYUTIM/CoursePower_AutoLogoutBlocker/raw/refs/heads/main/AutoLogoutBlocker_ver1.0.0.zip)から ZIP ファイルをダウンロードします。
+1. [拡張機能のダウンロードリンク](https://github.com/SAYUTIM/CoursePower_AutoLogoutBlocker/raw/refs/heads/main/AutoLogoutBlocker_ver1.1.0.zip)から ZIP ファイルをダウンロードします。
 
 2. ダウンロードした ZIP ファイルを解凍します。
 
 3. Chrome の拡張機能ページ（`chrome://extensions/`）にアクセスし、右上の「デベロッパーモード」を有効にします。
 
-4. 「パッケージ化されていない拡張機能を読み込む」をクリックし、先ほど解凍したフォルダー内にある `AutoLogoutBlocker` を選択します。
+4. 「パッケージ化されていない拡張機能を読み込む」をクリックし、先ほど解凍したフォルダー内にある `AutoLogoutBlocker`フォルダー を選択します。
 
 5. 拡張機能「Auto Logout Blocker」が表示されたら、拡張機能を有効にします。
 
@@ -24,3 +24,13 @@
 
 - 「自動ログアウト無効化中」の状態では、自動でログアウトされなくなります。
 - 「自動ログアウト有効化中」の状態では、通常通り自動でログアウトされます。
+
+## 自動ログイン機能有効化の方法
+
+1. `AutoLogoutBlocker`フォルダー内にある`inject.js`をVSCなどのエディターで開きます。
+
+2. 1行目と2行目に、ユーザー名とパスワードを入れて保存します。
+
+3. Chrome の拡張機能ページ（`chrome://extensions/`）にアクセスし、`auto logout blocker`の「詳細」をクリックします。
+
+4. 上部にある更新ボタンを押して有効になります。
